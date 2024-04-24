@@ -1,10 +1,8 @@
-version:  "3.9"
+version:  "3.3"
 
 services:
   nginx_stack:
     image: nginx
-#    volumes:
-#      - ./nginx.conf:/etc/nginx/nginx.conf
     volumes:
       - ./conf.d/:/etc/nginx/conf.d/
       - ./html/:/usr/share/nginx/html/
